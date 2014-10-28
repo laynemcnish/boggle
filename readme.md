@@ -7,10 +7,10 @@ If the string is found in the dictionary, it is added to the final array of word
 ### Board Set-Up
 The board is added as a string of 16 characters.
 On a physical board, they would look like:
-  0  1  2  3  
-  4  5  6  7
-  8  9 10 11
- 12 13 14 15
++  0  1  2  3  
++  4  5  6  7
++  8  9 10 11
++ 12 13 14 15
  
 ### Neighbors
 I figured out by hand what the possible neighbors would be for each index.
