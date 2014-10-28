@@ -33,7 +33,7 @@ They are:
 - N15: [10, 11, 14]
 
 ### Improvements
-<p>While the current code implementation works, it is very slow.</p>
+<p>While the current code implementation works, there is room for improvement.</p>
 <p>I have already improved it greatly by switching from instantiating the dictionary as an array to a hash.</p>
 <p>This allowed me to switch from Array.include? to search for words to a basic Hash lookup which increased the speed considerably.</p>
 <p>Still, it needs more work.</p>
