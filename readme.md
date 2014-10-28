@@ -32,12 +32,12 @@ I figured out by hand what the possible neighbors would be for each index.
 - N15: [10, 11, 14]
 
 ### Improvements
-While the current code implementation works, it is very slow.
-I have already improved it greatly by switching from instantiating the dictionary as an array to a hash.
-From there, changing from the include method to just searching by index of the hash, it has quickened considerably.
-Still, it needs more work.
-The biggest feature I would like to add is a search function that compares the current string to the beginnings of words in the dictionary.  
-If it is found that that string is not contained at the beginning of any word in the dictionary, the loop through all of the possible paths from that point stop and it moves onto the next path.
-I think this could cut the search time down quite a bit.
+<p>While the current code implementation works, it is very slow.</p>
+<p>I have already improved it greatly by switching from instantiating the dictionary as an array to a hash.</p>
+<p>From there, changing from the include method to just searching by index of the hash, it has quickened considerably.</p>
+<p>Still, it needs more work.</p>
+<p>The biggest feature I would like to add is a search function that compares the current string to the beginnings of words in the dictionary.  </p>
+<p>If it is found that that string is not contained at the beginning of any word in the dictionary, the loop through all of the possible paths from that point stop and it moves onto the next path.</p>
+<p>I think this could cut the search time down quite a bit.</p>
 
 
