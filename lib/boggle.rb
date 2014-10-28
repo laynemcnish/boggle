@@ -1,7 +1,7 @@
 class Boggle
 
   def initialize(board)
-    @board = board.split("")
+    @board = board.downcase.split("")
     @dictionary = []
     @found_words = []
     IO.foreach("/Users/laynemcnish/gSchoolWork/boggle/bin/dictionary.txt") { |word| @dictionary << word.delete("\n") if word.length >=3 }
@@ -38,6 +38,6 @@ class Boggle
   end
 end
 
-board = "abcdefghijklmnop"
+board = "abcdefghijklmnop".upcase!
 p Boggle.new(board).find_words
 
