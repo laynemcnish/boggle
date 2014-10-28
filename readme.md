@@ -13,7 +13,8 @@ On a physical board, they would look like:
 + 12 13 14 15
  
 ### Neighbors
-I figured out by hand what the possible neighbors would be for each index.
+<p>Since the current board is of fixed height and width, you can pre-compute all possible neighbors for each grid index.</p>
+They are:
 - N0:  [1, 4, 5]
 - N1:  [0, 2, 4, 5, 6]
 - N2:  [1, 3, 5, 6, 7]
