@@ -20,9 +20,7 @@ class Boggle
   def explore_words(i, visited, str)
     visited[i] = true
     new_string = str + @board[i]
-    if new_string.length >= 3 && @dictionary[new_string] != nil
-      @found_words << new_string
-    end
+    is_a_valid_boggle_word?(new_string)
     for j in @neighbors[i]
       if visited[j] != true
         explore_words(j, visited, new_string)
@@ -30,6 +28,12 @@ class Boggle
     end
     visited[i] = false
     new_string == new_string[0...str.length]
+  end
+
+  def is_a_valid_boggle_word?(word)
+    if word.length >= 3 && @dictionary[word] != nil
+      @found_words << word
+    end
   end
 
   def find_words
